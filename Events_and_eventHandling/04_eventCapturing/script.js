@@ -14,5 +14,5 @@ b.addEventListener("click",function(){
 })
 a.addEventListener("click",function(){
     console.log("a clicked")
-
+ 
 },true)
