@@ -2,7 +2,7 @@
 
 // store
 
-// localStorage.setItem("name","lakshit")
+sessionStorage.setItem("name","lakshit")
 
 
 // fetch
@@ -14,5 +14,3 @@
 // localStorage.removeItem("name")
 
 // update
-
-localStorage.removeItem("name","sisodiya")  // overwrite the previous one if exist

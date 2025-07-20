@@ -6,4 +6,4 @@
 - session storage stores data temporarily,data will be deleted after tab is closed
 /
 # Cookies
-- Cookies also stores data,It saves data in the browser property called cookies It is basically for light data or less data
+- Cookies also stores data,It saves data in the browser property called cookies It is basically for light data or less data 
