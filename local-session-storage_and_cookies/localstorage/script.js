@@ -14,3 +14,9 @@
 // localStorage.removeItem("name")
 
 // update
+
+sessionStorage.setItem("name","lakshit")    // overwrite the previous one if exists
+
+// clear
+
+sessionStorage.clear()
