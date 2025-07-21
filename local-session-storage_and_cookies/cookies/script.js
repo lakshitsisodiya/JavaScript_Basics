@@ -2,8 +2,8 @@
 
 // store
 
-sessionStorage.setItem("name","lakshit")
-
+document.cookie="email=lakshitsisodiya745@gmail.com"
+document.cookie="age=19"
 
 // fetch
 
@@ -15,8 +15,8 @@ sessionStorage.setItem("name","lakshit")
 
 // update
 
-sessionStorage.setItem("name","lakshit")    // overwrite the previous one if exists
+// sessionStorage.setItem("name","lakshit")    // overwrite the previous one if exists
 
 // clear
 
-sessionStorage.clear()
+// sessionStorage.clear()
