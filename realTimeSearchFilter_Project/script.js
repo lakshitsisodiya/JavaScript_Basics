@@ -195,12 +195,30 @@ function showUsers(arr){
 
 showUsers(users)
 
-let inp=document.querySelector(".inp")
-inp.addEventListener("input",function(){
-   let newUsers=  users.filter((user)=>{
-    return user.name.toLowerCase().startsWith(inp.value.toLowerCase())
+// let inp=document.querySelector(".inp")
+// inp.addEventListener("input",function(){
+//    let newUsers=  users.filter((user)=>{
+//     return user.name.toLowerCase().startsWith(inp.value.toLowerCase())
 
-   })
-   document.querySelector(".cards").innerHTML=""
-   showUsers(newUsers)
-})
+//    })
+//    document.querySelector(".cards").innerHTML=""
+//    showUsers(newUsers)
+// })
+let inp = document.querySelector(".inp");
+let msg = document.querySelector(".message");
+let cardsContainer = document.querySelector(".cards");
+
+inp.addEventListener("input", function () {
+   let newUsers = users.filter((user) =>
+      user.name.toLowerCase().startsWith(inp.value.toLowerCase())
+   );
+
+   cardsContainer.innerHTML = "";
+   msg.textContent = ""; // clear any previous message
+
+   if (newUsers.length === 0) {
+       msg.textContent = "No users found.";
+   } else {
+       showUsers(newUsers);
+   }
+});
